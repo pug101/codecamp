@@ -1,0 +1,36 @@
+<!-- file: index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>hamster survey</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+   <h1 id="title">Hamster Survey</h1>
+    <p id="description">This is a survey about how your hamster(s) died</p>
+  <form id="survey-form">
+      <label id="name-label" for="name">Name:<input id="name" placeholder="jon doe" required type="text"></lable>
+      <label id="email-label" for="email">Email:<input type="email" placeholder="example@gmail.com" required id="email"></label>
+      <label id="number-label" for="number">Number of dead hamsters:<input id="number" min="0" max="999" type="number" placeholder="17"></label>
+       <label for="dropdown">Did you purposfully kill one or more of the hamsters?
+       <select id="dropdown">
+        <option value="">select one</option>
+        <option value="1">Yes</option>
+        <option value="2">What is wrong with you?</option></label>
+        <label><input type="radio" name="who-owned-hamster" value="owned">I owned the hamster(s)</label>
+        <label><input value="didn't-own" type="radio" name="who-owned-hamster">I didn't own the hamster(s)</label>
+      <p>How did your hamster(s) die? select all that apply</p>
+        <label for="microwave"><input type="checkbox" id="microwave" value="microwave">Exploded in microwave</label>
+        <label for="fall"><input type="checkbox" id="fall" value="fall">Was thrown/Fell out of window</label>
+        <label for="radiator"><input type="checkbox" id="radiator" value="radiator">Got stuck in radiator</label>
+        <label for="burned"><input type="checkbox" id="burned" value="burned">Ran into the fireplace</label>
+        <label for="vacuum"><input type="checkbox" id="vacuum" value="vacuum">Got sucked up by a vacuum</label>
+        <label for="car"><input type="checkbox" id="car" value="car">Was ran over by car</label>
+        <label for="extra-deaths">Any other ways your hamster(s) died<textarea id="extra-deaths" placeholder="Said 'boo' and it died"></textarea></label>
+       </fieldset>
+        <input type="submit" id="submit">
+     </select>
+    </form>
+  </body>
+</html>
